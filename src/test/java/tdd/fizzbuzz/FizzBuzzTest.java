@@ -10,7 +10,7 @@ public class FizzBuzzTest {
     public void should_return_1_when_order_number_is_1() {
         //given
         String actual = "";
-        int orderNumber = 0;
+        int orderNumber = 1;
         FizzBuzz fizzbuzz = new FizzBuzz();
         //when
         actual = fizzbuzz.countOff(orderNumber);
