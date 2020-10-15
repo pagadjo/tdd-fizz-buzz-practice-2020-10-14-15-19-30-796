@@ -11,7 +11,7 @@ public class FizzBuzz {
         final boolean isModule7 = (orderNumber % 7 == 0);
 
         if (isModulo3 && isModulo5) {
-            return "FizzBuzz";
+            return FIZZ + BUZZ;
         }
         if (isModule7) {
             return WHIZZ;
