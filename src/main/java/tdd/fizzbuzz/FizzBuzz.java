@@ -8,12 +8,15 @@ public class FizzBuzz {
     public String countOff(int orderNumber) {
         final boolean isModulo3 = (orderNumber % 3 == 0);
         final boolean isModulo5 = (orderNumber % 5 == 0);
-        final boolean isModule7 = (orderNumber % 7 == 0);
+        final boolean isModulo7 = (orderNumber % 7 == 0);
 
+        if (isModulo3 && isModulo7) {
+            return String.valueOf(orderNumber);
+        }
         if (isModulo3 && isModulo5) {
             return FIZZ + BUZZ;
         }
-        if (isModule7) {
+        if (isModulo7) {
             return WHIZZ;
         }
         if (isModulo5) {

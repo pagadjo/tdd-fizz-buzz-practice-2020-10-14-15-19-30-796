@@ -66,4 +66,16 @@ public class FizzBuzzTest {
         assertEquals("FizzBuzz", actual);
     }
 
+    @Test
+    public void should_return_FizzWhizz_when_order_number_is_multiple_3_7() {
+        //given
+        String actual = "";
+        int orderNumber = 21;
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        //when
+        actual = fizzbuzz.countOff(orderNumber);
+        //then
+        assertEquals("FizzWhizz", actual);
+    }
+
 }
