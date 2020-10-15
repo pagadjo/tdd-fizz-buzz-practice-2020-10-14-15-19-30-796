@@ -55,7 +55,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_FizzBuzz_when_order_number_is_multiple_3_5() {
+    public void should_return_Fizz_Buzz_when_order_number_is_multiple_3_5() {
         //given
         String actual = "";
         int orderNumber = 15;
@@ -67,7 +67,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_FizzWhizz_when_order_number_is_multiple_3_7() {
+    public void should_return_Fizz_Whizz_when_order_number_is_multiple_3_7() {
         //given
         String actual = "";
         int orderNumber = 21;
@@ -76,6 +76,18 @@ public class FizzBuzzTest {
         actual = fizzbuzz.countOff(orderNumber);
         //then
         assertEquals("FizzWhizz", actual);
+    }
+
+    @Test
+    public void should_return_Buzz_Whizz_when_order_number_is_multiple_5_7() {
+        //given
+        String actual = "";
+        int orderNumber = 35;
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        //when
+        actual = fizzbuzz.countOff(orderNumber);
+        //then
+        assertEquals("BuzzWhizz", actual);
     }
 
 }
