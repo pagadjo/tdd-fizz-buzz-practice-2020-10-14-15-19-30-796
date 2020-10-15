@@ -11,7 +11,7 @@ public class FizzBuzz {
         final boolean isModulo7 = (orderNumber % 7 == 0);
 
         if (isModulo3 && isModulo5 && isModulo7) {
-            return String.valueOf(orderNumber);
+            return FIZZ + BUZZ + WHIZZ;
         }
         if (isModulo5 && isModulo7) {
             return BUZZ + WHIZZ;
