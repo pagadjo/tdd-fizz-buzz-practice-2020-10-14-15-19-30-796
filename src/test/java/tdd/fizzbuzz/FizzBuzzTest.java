@@ -90,4 +90,15 @@ public class FizzBuzzTest {
         assertEquals("BuzzWhizz", actual);
     }
 
+    @Test
+    public void should_return_Fizz_Buzz_Whizz_when_order_number_is_multiple_3_5_7() {
+        //given
+        String actual = "";
+        int orderNumber = 105;
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        //when
+        actual = fizzbuzz.countOff(orderNumber);
+        //then
+        assertEquals("FizzBuzzWhizz", actual);
+    }
 }
