@@ -10,6 +10,9 @@ public class FizzBuzz {
         final boolean isModulo5 = (orderNumber % 5 == 0);
         final boolean isModule7 = (orderNumber % 7 == 0);
 
+        if (isModulo3 && isModulo5) {
+            return "FizzBuzz";
+        }
         if (isModule7) {
             return WHIZZ;
         }
